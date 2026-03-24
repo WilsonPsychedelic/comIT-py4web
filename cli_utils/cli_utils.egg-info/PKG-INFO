@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: cli_utils
+Version: 0.2.0
+Summary: A small utility package for CLI separator functions
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# cli_utils
+
+A beginner-friendly Python package with CLI utility functions.
+
+## Usage
+
+'''python
+from cli_utils import print_separator
+
+print_separator()
+# Output *************************************
+

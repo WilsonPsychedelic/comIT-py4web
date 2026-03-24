@@ -1,0 +1,35 @@
+import random
+
+student_names =[
+    "Alice", "Bob", "Charlie", "David", "Emma",
+    "Fiona", "George", "Hannah", "Ian", "Jack",
+    "Kate", "Liam", "Mia", "Noah", "Olivia"
+]
+
+grade_scale_13_steps = {
+    "A+": 10.00,
+    "A": 9.58,
+    "A-": 9.17,
+    "B+": 8.75,
+    "B": 8.33,
+    "B-": 7.92,
+    "C+": 7.50,
+    "C": 7.08,
+    "C-": 6.67,
+    "D+": 6.25,
+    "D": 5.83,
+    "D-": 5.42,
+    "F": 5.00
+}
+
+students = {name: random.uniform(5.0, 10.0) for name in student_names}
+
+def get_grade(score):
+    for grade, value in sorted(grade_scale_13_steps.items(), key=lambda x: x[1], reverse=True):
+        if score >= value:
+            return grade
+    return "F"
+
+for name, score in students.items():
+    grade = get_grade(score)
+    print(f"{name} got a score of {score:.2f} with a grade of {grade}")

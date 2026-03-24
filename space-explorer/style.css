@@ -1,0 +1,100 @@
+/* Import a cool font from Google */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Exo+2&display=swap');
+
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Style the whole page */
+body {
+    font-family: 'Exo 2', sans-serif;
+    background-color: #050510;
+    background-image: radial-gradient(circle at 20% 30%, #1a0533 0%, transparent 50%),
+                      radial-gradient(circle at 80% 70%, #001a33 0%, transparent 50%);
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+/* The card container */
+#profile-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(200, 170, 255, 0.3);
+  border-radius: 20px;
+  padding: 50px 60px;
+  max-width: 520px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 0 60px rgba(200, 170, 255, 0.1);
+}
+
+/* The big name heading */
+#explorer-name { 
+  cursor: pointer;
+  font-family:'Orbitron', sans-serif;
+  font-size: 32px;
+  color: #c8aaff;
+  margin-bottom: 8px;
+}
+
+/* The subtitle under the name */
+.explorer-title {
+  color: #7effd4;
+  font-size: 16px;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+  /* The stats list */
+  .explorer-stats {
+    list-style: none; /* removes bullet dots */
+    margin-bottom: 36px;
+    text-align: left;
+    color: #d0d0e8;
+    line-height: 2;
+  }
+
+  .explorer-stats strong {
+    color: #ffcc66;
+
+  }
+
+  /* The launch button */
+  #launch-btn {
+    background: linear-gradient(135deg, #c8aaff, #7effd4);
+    color: #0d0d1a;
+    border: none;
+    border-radius: 30px;
+    padding: 14px 36px;
+    font-size: 16px;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;          /* shows hand cursor on hover */
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  #launch-btn:hover {
+    transform: scale(1.05);   /* grows slightly on hover */
+    box-shadow: 0 0 30px rgba(200, 170, 255, 0.5);
+  }
+
+  /* The mission status message (starts empty, JS fills it) */
+  #mission-status {
+    font-style: italic;
+    min-height: 24px;       /* reserves space even when empty */
+    transition: all 0.4s;   /* smooth fade when JS changes it */  
+  }
+
+  /* style.css - add this too */
+  .status-active {
+    color: #7effd4;
+    margin-top: 20px;
+    font-size: 15px;
+    animation: fadeIn 0.5s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
