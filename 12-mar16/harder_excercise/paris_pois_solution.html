@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e2166deae55b1e70f9d57a1833002663 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e2166deae55b1e70f9d57a1833002663" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e2166deae55b1e70f9d57a1833002663 = L.map(
+                "map_e2166deae55b1e70f9d57a1833002663",
+                {
+                    center: [48.8566, 2.3522],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8438d2b1e354a4bd3c200238aa008b46 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_8438d2b1e354a4bd3c200238aa008b46.addTo(map_e2166deae55b1e70f9d57a1833002663);
+        
+    
+            var marker_09bc0b9377ac4a22169c25f91af09d73 = L.marker(
+                [48.8298353, 2.3228662],
+                {
+}
+            ).addTo(map_e2166deae55b1e70f9d57a1833002663);
+        
+    
+            var icon_071efb2d21ef38ffea57761033760371 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4b26fb344cb9c7ebd10b14f62247bb8f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_073ca33f2c2e929d05d090a071233cee = $(`<div id="html_073ca33f2c2e929d05d090a071233cee" style="width: 100.0%; height: 100.0%;"><b>🍽️ The Village Terrazza</b><br>Cuisine: Pizza<br>Price: $$<br>No ratings yet<br><i>48.8298, 2.3229</i></div>`)[0];
+                popup_4b26fb344cb9c7ebd10b14f62247bb8f.setContent(html_073ca33f2c2e929d05d090a071233cee);
+            
+        
+
+        marker_09bc0b9377ac4a22169c25f91af09d73.bindPopup(popup_4b26fb344cb9c7ebd10b14f62247bb8f)
+        ;
+
+        
+    
+    
+            marker_09bc0b9377ac4a22169c25f91af09d73.bindTooltip(
+                `<div>
+                     The Village Terrazza
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_09bc0b9377ac4a22169c25f91af09d73.setIcon(icon_071efb2d21ef38ffea57761033760371);
+            
+    
+            var marker_bbc9fa1a98c3ec447e8c22f8b2721cc2 = L.marker(
+                [48.8319911, 2.3245334],
+                {
+}
+            ).addTo(map_e2166deae55b1e70f9d57a1833002663);
+        
+    
+            var icon_849f53908032af00b224cf402a8d74a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dd6c6cb9feaea51116b0f51a1cfeef71 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d6fd7e344e6368bc645872ea7124af44 = $(`<div id="html_d6fd7e344e6368bc645872ea7124af44" style="width: 100.0%; height: 100.0%;"><b>🍽️ Le Severo</b><br>Cuisine: French<br>Price: $$$$<br>No ratings yet<br><i>48.8320, 2.3245</i></div>`)[0];
+                popup_dd6c6cb9feaea51116b0f51a1cfeef71.setContent(html_d6fd7e344e6368bc645872ea7124af44);
+            
+        
+
+        marker_bbc9fa1a98c3ec447e8c22f8b2721cc2.bindPopup(popup_dd6c6cb9feaea51116b0f51a1cfeef71)
+        ;
+
+        
+    
+    
+            marker_bbc9fa1a98c3ec447e8c22f8b2721cc2.bindTooltip(
+                `<div>
+                     Le Severo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bbc9fa1a98c3ec447e8c22f8b2721cc2.setIcon(icon_849f53908032af00b224cf402a8d74a2);
+            
+    
+            var marker_9ac94f211ac4a90c89b2438084962890 = L.marker(
+                [48.8618492, 2.3434997],
+                {
+}
+            ).addTo(map_e2166deae55b1e70f9d57a1833002663);
+        
+    
+            var icon_119656120b909eb726cef0213ef3ad86 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fad63071eb6214e86fd09829335f3f06 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_70cb0d3e4cb36b89912e2e0af39fc367 = $(`<div id="html_70cb0d3e4cb36b89912e2e0af39fc367" style="width: 100.0%; height: 100.0%;"><b>🍽️ Uno</b><br>Cuisine: Italian;pizza<br>Price: $$$<br>No ratings yet<br><i>48.8618, 2.3435</i></div>`)[0];
+                popup_fad63071eb6214e86fd09829335f3f06.setContent(html_70cb0d3e4cb36b89912e2e0af39fc367);
+            
+        
+
+        marker_9ac94f211ac4a90c89b2438084962890.bindPopup(popup_fad63071eb6214e86fd09829335f3f06)
+        ;
+
+        
+    
+    
+            marker_9ac94f211ac4a90c89b2438084962890.bindTooltip(
+                `<div>
+                     Uno
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9ac94f211ac4a90c89b2438084962890.setIcon(icon_119656120b909eb726cef0213ef3ad86);
+            
+    
+            var marker_849e9d4f52cf46aba0d4490822774ff0 = L.marker(
+                [48.8672925, 2.3255509],
+                {
+}
+            ).addTo(map_e2166deae55b1e70f9d57a1833002663);
+        
+    
+            var icon_299ef4238d5a035c22884fd62212655f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7efa24aea24c7d9868d18a0121bf6151 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d56b9af273aafffa8379e9ab595d9ddf = $(`<div id="html_d56b9af273aafffa8379e9ab595d9ddf" style="width: 100.0%; height: 100.0%;"><b>🍽️ La Crypte Polska</b><br>Cuisine: French<br>Price: $$$$<br>No ratings yet<br><i>48.8673, 2.3256</i></div>`)[0];
+                popup_7efa24aea24c7d9868d18a0121bf6151.setContent(html_d56b9af273aafffa8379e9ab595d9ddf);
+            
+        
+
+        marker_849e9d4f52cf46aba0d4490822774ff0.bindPopup(popup_7efa24aea24c7d9868d18a0121bf6151)
+        ;
+
+        
+    
+    
+            marker_849e9d4f52cf46aba0d4490822774ff0.bindTooltip(
+                `<div>
+                     La Crypte Polska
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_849e9d4f52cf46aba0d4490822774ff0.setIcon(icon_299ef4238d5a035c22884fd62212655f);
+            
+    
+            var marker_2f7786b6a79a95630a481e7a75a93689 = L.marker(
+                [48.865893, 2.3372573],
+                {
+}
+            ).addTo(map_e2166deae55b1e70f9d57a1833002663);
+        
+    
+            var icon_6bb526a505e695bbd9c76bc789c951e0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_77892a9fdf9887c82747404010e9946d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6a76fb65d5c873cb4fbddf26347d1390 = $(`<div id="html_6a76fb65d5c873cb4fbddf26347d1390" style="width: 100.0%; height: 100.0%;"><b>🍽️ Mystery Cuisine</b><br>Cuisine: French<br>Price: $$$<br>No ratings yet<br><i>48.8659, 2.3373</i></div>`)[0];
+                popup_77892a9fdf9887c82747404010e9946d.setContent(html_6a76fb65d5c873cb4fbddf26347d1390);
+            
+        
+
+        marker_2f7786b6a79a95630a481e7a75a93689.bindPopup(popup_77892a9fdf9887c82747404010e9946d)
+        ;
+
+        
+    
+    
+            marker_2f7786b6a79a95630a481e7a75a93689.bindTooltip(
+                `<div>
+                     Mystery Cuisine
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2f7786b6a79a95630a481e7a75a93689.setIcon(icon_6bb526a505e695bbd9c76bc789c951e0);
+            
+    
+            var marker_f4620e06eb5085767db5270c0248fd22 = L.marker(
+                [48.8570374, 2.3118779],
+                {
+}
+            ).addTo(map_e2166deae55b1e70f9d57a1833002663);
+        
+    
+            var icon_45aa7f0007041e91775aa671b00232c7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_09f2c451f908ef702819a61ac6875f20 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_25261c1c0a031f011093bc6e0cf4f936 = $(`<div id="html_25261c1c0a031f011093bc6e0cf4f936" style="width: 100.0%; height: 100.0%;"><b>🏛️ Musée de l'Armée</b><br>Artifacts: 30,867<br>Entry: Free<br>Current: Permanent Collection<br><i>48.8570, 2.3119</i></div>`)[0];
+                popup_09f2c451f908ef702819a61ac6875f20.setContent(html_25261c1c0a031f011093bc6e0cf4f936);
+            
+        
+
+        marker_f4620e06eb5085767db5270c0248fd22.bindPopup(popup_09f2c451f908ef702819a61ac6875f20)
+        ;
+
+        
+    
+    
+            marker_f4620e06eb5085767db5270c0248fd22.bindTooltip(
+                `<div>
+                     Musée de l'Armée
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f4620e06eb5085767db5270c0248fd22.setIcon(icon_45aa7f0007041e91775aa671b00232c7);
+            
+    
+            var marker_d2db367373102e981ec78e2af493936c = L.marker(
+                [48.8631692, 2.3329513],
+                {
+}
+            ).addTo(map_e2166deae55b1e70f9d57a1833002663);
+        
+    
+            var icon_6c884619e42f048cbb98c8caf8401cc8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_30cc831fa9fcb6b480954b16957d5a2b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_22851830d9df59f290c2ad32d0e1ccc6 = $(`<div id="html_22851830d9df59f290c2ad32d0e1ccc6" style="width: 100.0%; height: 100.0%;"><b>🏛️ Musée des Arts Décoratifs</b><br>Artifacts: 48,828<br>Entry: Free<br>Current: Permanent Collection<br><i>48.8632, 2.3330</i></div>`)[0];
+                popup_30cc831fa9fcb6b480954b16957d5a2b.setContent(html_22851830d9df59f290c2ad32d0e1ccc6);
+            
+        
+
+        marker_d2db367373102e981ec78e2af493936c.bindPopup(popup_30cc831fa9fcb6b480954b16957d5a2b)
+        ;
+
+        
+    
+    
+            marker_d2db367373102e981ec78e2af493936c.bindTooltip(
+                `<div>
+                     Musée des Arts Décoratifs
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d2db367373102e981ec78e2af493936c.setIcon(icon_6c884619e42f048cbb98c8caf8401cc8);
+            
+    
+            var marker_36fd19b035411e8bad35455295d7ad89 = L.marker(
+                [48.8660977, 2.3554138],
+                {
+}
+            ).addTo(map_e2166deae55b1e70f9d57a1833002663);
+        
+    
+            var icon_2043b53a939d5f8ae196ec7839f553ea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4b4e64bae8193b785c9c04ab5034668a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_494c89e638566e8c858612f19fced566 = $(`<div id="html_494c89e638566e8c858612f19fced566" style="width: 100.0%; height: 100.0%;"><b>🏛️ Musée des Arts et Métiers</b><br>Artifacts: 46,181<br>Entry: €15<br>Current: Permanent Collection<br><i>48.8661, 2.3554</i></div>`)[0];
+                popup_4b4e64bae8193b785c9c04ab5034668a.setContent(html_494c89e638566e8c858612f19fced566);
+            
+        
+
+        marker_36fd19b035411e8bad35455295d7ad89.bindPopup(popup_4b4e64bae8193b785c9c04ab5034668a)
+        ;
+
+        
+    
+    
+            marker_36fd19b035411e8bad35455295d7ad89.bindTooltip(
+                `<div>
+                     Musée des Arts et Métiers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_36fd19b035411e8bad35455295d7ad89.setIcon(icon_2043b53a939d5f8ae196ec7839f553ea);
+            
+    
+            var marker_d094f627972260f610e67b9038bbe8aa = L.marker(
+                [48.8373537, 2.3964048],
+                {
+}
+            ).addTo(map_e2166deae55b1e70f9d57a1833002663);
+        
+    
+            var icon_c1382e7f6f21e64558158815b3bfb635 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6d3f07a0ec29ce3f4051b217de118748 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8428a813f5def0676d19a53905c2600d = $(`<div id="html_8428a813f5def0676d19a53905c2600d" style="width: 100.0%; height: 100.0%;"><b>🌳 Square Georges Contenot</b><br>Area: 8.8 hectares<br>❌ No playground<br>✅ Dog park<br><i>48.8374, 2.3964</i></div>`)[0];
+                popup_6d3f07a0ec29ce3f4051b217de118748.setContent(html_8428a813f5def0676d19a53905c2600d);
+            
+        
+
+        marker_d094f627972260f610e67b9038bbe8aa.bindPopup(popup_6d3f07a0ec29ce3f4051b217de118748)
+        ;
+
+        
+    
+    
+            marker_d094f627972260f610e67b9038bbe8aa.bindTooltip(
+                `<div>
+                     Square Georges Contenot
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d094f627972260f610e67b9038bbe8aa.setIcon(icon_c1382e7f6f21e64558158815b3bfb635);
+            
+    
+            var marker_0bd5f99b47f394a50aa4dec020805bb3 = L.marker(
+                [48.8531664, 2.3691393],
+                {
+}
+            ).addTo(map_e2166deae55b1e70f9d57a1833002663);
+        
+    
+            var icon_a244fbe5a726527ebb97628edac889bd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_518f0b1cacb4dd5bd1cf51a22d3faca3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e29d41897da2a703de0cd1ef3e5642b9 = $(`<div id="html_e29d41897da2a703de0cd1ef3e5642b9" style="width: 100.0%; height: 100.0%;"><b>🌳 Le Génie de la Liberté</b><br>Area: 6.3 hectares<br>❌ No playground<br>❌ No dog park<br><i>48.8532, 2.3691</i></div>`)[0];
+                popup_518f0b1cacb4dd5bd1cf51a22d3faca3.setContent(html_e29d41897da2a703de0cd1ef3e5642b9);
+            
+        
+
+        marker_0bd5f99b47f394a50aa4dec020805bb3.bindPopup(popup_518f0b1cacb4dd5bd1cf51a22d3faca3)
+        ;
+
+        
+    
+    
+            marker_0bd5f99b47f394a50aa4dec020805bb3.bindTooltip(
+                `<div>
+                     Le Génie de la Liberté
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0bd5f99b47f394a50aa4dec020805bb3.setIcon(icon_a244fbe5a726527ebb97628edac889bd);
+            
+    
+            var marker_173096768c60bbbaa2e65c21c68590b9 = L.marker(
+                [48.8488403, 2.3080453],
+                {
+}
+            ).addTo(map_e2166deae55b1e70f9d57a1833002663);
+        
+    
+            var icon_a1ea453c2728a38111eed2bd4fdc25c2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f0f803d84692f4688d54a7e42564c1f4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0e3d7a250d9dad136515b34996906fc2 = $(`<div id="html_0e3d7a250d9dad136515b34996906fc2" style="width: 100.0%; height: 100.0%;"><b>🌳 cour du Bon conseil</b><br>Area: 18.4 hectares<br>❌ No playground<br>❌ No dog park<br><i>48.8488, 2.3080</i></div>`)[0];
+                popup_f0f803d84692f4688d54a7e42564c1f4.setContent(html_0e3d7a250d9dad136515b34996906fc2);
+            
+        
+
+        marker_173096768c60bbbaa2e65c21c68590b9.bindPopup(popup_f0f803d84692f4688d54a7e42564c1f4)
+        ;
+
+        
+    
+    
+            marker_173096768c60bbbaa2e65c21c68590b9.bindTooltip(
+                `<div>
+                     cour du Bon conseil
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_173096768c60bbbaa2e65c21c68590b9.setIcon(icon_a1ea453c2728a38111eed2bd4fdc25c2);
+            
+    
+            var poly_line_0f3bc0bdc17ad717968887b44602b626 = L.polyline(
+                [[48.8298353, 2.3228662], [48.8570374, 2.3118779]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e2166deae55b1e70f9d57a1833002663);
+        
+    
+        var popup_8dcd4995193ff776f9ea4d912c194103 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a23ed70c29974873a8598b01d39bdbd5 = $(`<div id="html_a23ed70c29974873a8598b01d39bdbd5" style="width: 100.0%; height: 100.0%;">Distance: 3.12 km</div>`)[0];
+                popup_8dcd4995193ff776f9ea4d912c194103.setContent(html_a23ed70c29974873a8598b01d39bdbd5);
+            
+        
+
+        poly_line_0f3bc0bdc17ad717968887b44602b626.bindPopup(popup_8dcd4995193ff776f9ea4d912c194103)
+        ;
+
+        
+    
+    
+            var marker_e7467f569c2cf2f74e02e1dd31e5b8c0 = L.marker(
+                [48.843436350000005, 2.31737205],
+                {
+}
+            ).addTo(map_e2166deae55b1e70f9d57a1833002663);
+        
+    
+            var div_icon_cc6942b09533ce17714e5fb791c07386 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; background-color: white; padding: 3px; border-radius: 5px;\"\u003e3.1km\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_f87226e1d478004b36d252fef9e9f1e5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_895bb73974b86350a59be1ab0a570119 = $(`<div id="html_895bb73974b86350a59be1ab0a570119" style="width: 100.0%; height: 100.0%;">📏 3.12 km</div>`)[0];
+                popup_f87226e1d478004b36d252fef9e9f1e5.setContent(html_895bb73974b86350a59be1ab0a570119);
+            
+        
+
+        marker_e7467f569c2cf2f74e02e1dd31e5b8c0.bindPopup(popup_f87226e1d478004b36d252fef9e9f1e5)
+        ;
+
+        
+    
+    
+                marker_e7467f569c2cf2f74e02e1dd31e5b8c0.setIcon(div_icon_cc6942b09533ce17714e5fb791c07386);
+            
+    
+            var layer_control_4d07260e54f8bca5b31c4c8c4da44543_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_8438d2b1e354a4bd3c200238aa008b46,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_4d07260e54f8bca5b31c4c8c4da44543 = L.control.layers(
+                layer_control_4d07260e54f8bca5b31c4c8c4da44543_layers.base_layers,
+                layer_control_4d07260e54f8bca5b31c4c8c4da44543_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_e2166deae55b1e70f9d57a1833002663);
+
+        
+    
+            L.control.fullscreen(
+                {
+  "position": "topleft",
+  "title": "Full Screen",
+  "titleCancel": "Exit Full Screen",
+  "forceSeparateButton": false,
+}
+            ).addTo(map_e2166deae55b1e70f9d57a1833002663);
+        
+    
+            var measure_control_f716645bef1d8cf938b9e9deb73d6263 = new L.Control.Measure(
+                {
+  "position": "topleft",
+  "primaryLengthUnit": "meters",
+  "secondaryLengthUnit": "miles",
+  "primaryAreaUnit": "sqmeters",
+  "secondaryAreaUnit": "acres",
+});
+            map_e2166deae55b1e70f9d57a1833002663.addControl(measure_control_f716645bef1d8cf938b9e9deb73d6263);
+
+            // Workaround for using this plugin with Leaflet>=1.8.0
+            // https://github.com/ljagis/leaflet-measure/issues/171
+            L.Control.Measure.include({
+                _setCaptureMarkerIcon: function () {
+                    // disable autopan
+                    this._captureMarker.options.autoPanOnFocus = false;
+                    // default function
+                    this._captureMarker.setIcon(
+                        L.divIcon({
+                            iconSize: this._map.getSize().multiplyBy(2)
+                        })
+                    );
+                },
+            });
+
+        
+    
+            var tile_layer_55074e19c54442a10727a4882887aeed = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detect_retina": false, "max_native_zoom": 19, "max_zoom": 19, "min_zoom": 0, "no_wrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_4772966daddeb38478009e36f1dea42f = new L.Control.MiniMap(
+                tile_layer_55074e19c54442a10727a4882887aeed,
+                {
+  "position": "bottomright",
+  "width": 150,
+  "height": 150,
+  "collapsedWidth": 25,
+  "collapsedHeight": 25,
+  "zoomLevelOffset": -5,
+  "centerFixed": false,
+  "zoomAnimation": false,
+  "toggleDisplay": false,
+  "autoToggleDisplay": false,
+  "minimized": false,
+}
+            );
+            map_e2166deae55b1e70f9d57a1833002663.addControl(mini_map_4772966daddeb38478009e36f1dea42f);
+        
+    
+            var mouse_position_62ea6afa3e6558ceed3a6afc31e38972 = new L.Control.MousePosition(
+                {
+  "position": "bottomright",
+  "separator": " : ",
+  "emptyString": "Unavailable",
+  "lngFirst": false,
+  "numDigits": 5,
+  "prefix": "",
+}
+            );
+            mouse_position_62ea6afa3e6558ceed3a6afc31e38972.options["latFormatter"] =
+                undefined;
+            mouse_position_62ea6afa3e6558ceed3a6afc31e38972.options["lngFormatter"] =
+                undefined;
+            map_e2166deae55b1e70f9d57a1833002663.addControl(mouse_position_62ea6afa3e6558ceed3a6afc31e38972);
+        
+</script>
+</html>

@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_68d14a5b27f8c36d3741b5f4e0dc0dc1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_68d14a5b27f8c36d3741b5f4e0dc0dc1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_68d14a5b27f8c36d3741b5f4e0dc0dc1 = L.map(
+                "map_68d14a5b27f8c36d3741b5f4e0dc0dc1",
+                {
+                    center: [51.175076, -115.5720773],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d1872e971790bdfd07e561204c994a3c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d1872e971790bdfd07e561204c994a3c.addTo(map_68d14a5b27f8c36d3741b5f4e0dc0dc1);
+        
+    
+            var marker_b8fe3f8e27c6ec59bf9479365dddbcc2 = L.marker(
+                [51.1771471, -115.572596],
+                {
+}
+            ).addTo(map_68d14a5b27f8c36d3741b5f4e0dc0dc1);
+        
+    
+            var icon_dfddbc32b0b146a13986961807a4e490 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "brown",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_02db24b2954cc804cbf040298f89e5f6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ee108cdb302f7e0b4e9e0c9ec8fa2c08 = $(`<div id="html_ee108cdb302f7e0b4e9e0c9ec8fa2c08" style="width: 100.0%; height: 100.0%;">Wild Flour Bakery</div>`)[0];
+                popup_02db24b2954cc804cbf040298f89e5f6.setContent(html_ee108cdb302f7e0b4e9e0c9ec8fa2c08);
+            
+        
+
+        marker_b8fe3f8e27c6ec59bf9479365dddbcc2.bindPopup(popup_02db24b2954cc804cbf040298f89e5f6)
+        ;
+
+        
+    
+    
+                marker_b8fe3f8e27c6ec59bf9479365dddbcc2.setIcon(icon_dfddbc32b0b146a13986961807a4e490);
+            
+    
+            var marker_f04adc7ac478496f9ea1da232fa93a49 = L.marker(
+                [51.1785378, -115.571312],
+                {
+}
+            ).addTo(map_68d14a5b27f8c36d3741b5f4e0dc0dc1);
+        
+    
+            var icon_bfff38d30381befc26a2583a2f831432 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "brown",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_914029c1a34f0487ffe4ca4652cc666a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d703c2e9a2fb89e6f5f8c90511480d13 = $(`<div id="html_d703c2e9a2fb89e6f5f8c90511480d13" style="width: 100.0%; height: 100.0%;">Second Cup</div>`)[0];
+                popup_914029c1a34f0487ffe4ca4652cc666a.setContent(html_d703c2e9a2fb89e6f5f8c90511480d13);
+            
+        
+
+        marker_f04adc7ac478496f9ea1da232fa93a49.bindPopup(popup_914029c1a34f0487ffe4ca4652cc666a)
+        ;
+
+        
+    
+    
+                marker_f04adc7ac478496f9ea1da232fa93a49.setIcon(icon_bfff38d30381befc26a2583a2f831432);
+            
+    
+            var marker_f825f73ecbfe6bb8fd7ddbeaaba8af02 = L.marker(
+                [51.1780657, -115.5710329],
+                {
+}
+            ).addTo(map_68d14a5b27f8c36d3741b5f4e0dc0dc1);
+        
+    
+            var icon_986df473607c9cdb2605d85b97bc7588 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "brown",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5e5f33024ed9ef41a8850743f520bb62 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b95ad157f7ce6d42e17756ceda55e834 = $(`<div id="html_b95ad157f7ce6d42e17756ceda55e834" style="width: 100.0%; height: 100.0%;">Starbucks</div>`)[0];
+                popup_5e5f33024ed9ef41a8850743f520bb62.setContent(html_b95ad157f7ce6d42e17756ceda55e834);
+            
+        
+
+        marker_f825f73ecbfe6bb8fd7ddbeaaba8af02.bindPopup(popup_5e5f33024ed9ef41a8850743f520bb62)
+        ;
+
+        
+    
+    
+                marker_f825f73ecbfe6bb8fd7ddbeaaba8af02.setIcon(icon_986df473607c9cdb2605d85b97bc7588);
+            
+    
+            var marker_ade12726c97e4cae674015a9eb8107f7 = L.marker(
+                [51.1840033, -115.5514873],
+                {
+}
+            ).addTo(map_68d14a5b27f8c36d3741b5f4e0dc0dc1);
+        
+    
+            var icon_f1918096e325a220cde53e513adeaa19 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "brown",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f6a0436752e0fc961284caac64b6b066 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef8c70948c728c043c8c9f5788eb11ed = $(`<div id="html_ef8c70948c728c043c8c9f5788eb11ed" style="width: 100.0%; height: 100.0%;">Buffalo Mountain Cafe</div>`)[0];
+                popup_f6a0436752e0fc961284caac64b6b066.setContent(html_ef8c70948c728c043c8c9f5788eb11ed);
+            
+        
+
+        marker_ade12726c97e4cae674015a9eb8107f7.bindPopup(popup_f6a0436752e0fc961284caac64b6b066)
+        ;
+
+        
+    
+    
+                marker_ade12726c97e4cae674015a9eb8107f7.setIcon(icon_f1918096e325a220cde53e513adeaa19);
+            
+    
+            var marker_a2953bc73741dbe7b5902c52a89bbc73 = L.marker(
+                [51.1801069, -115.575988],
+                {
+}
+            ).addTo(map_68d14a5b27f8c36d3741b5f4e0dc0dc1);
+        
+    
+            var icon_f88e16ecc6a72c90e4dffca3c1202b6c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "brown",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_305571ea0295f460e81d2fcaa2444048 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bad3feddff355295d77198a9b8df116c = $(`<div id="html_bad3feddff355295d77198a9b8df116c" style="width: 100.0%; height: 100.0%;">Tim Hortons</div>`)[0];
+                popup_305571ea0295f460e81d2fcaa2444048.setContent(html_bad3feddff355295d77198a9b8df116c);
+            
+        
+
+        marker_a2953bc73741dbe7b5902c52a89bbc73.bindPopup(popup_305571ea0295f460e81d2fcaa2444048)
+        ;
+
+        
+    
+    
+                marker_a2953bc73741dbe7b5902c52a89bbc73.setIcon(icon_f88e16ecc6a72c90e4dffca3c1202b6c);
+            
+    
+            var marker_01a59bdef185fc7739902b971de4ba4f = L.marker(
+                [51.1774944, -115.571086],
+                {
+}
+            ).addTo(map_68d14a5b27f8c36d3741b5f4e0dc0dc1);
+        
+    
+            var icon_fda11fa2ad55219595c86c3d61631622 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "brown",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b65881b768ed36f44641e53629583462 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_74eec08799d63562064eb5fb2a7731e0 = $(`<div id="html_74eec08799d63562064eb5fb2a7731e0" style="width: 100.0%; height: 100.0%;">Evelyn's Coffee World</div>`)[0];
+                popup_b65881b768ed36f44641e53629583462.setContent(html_74eec08799d63562064eb5fb2a7731e0);
+            
+        
+
+        marker_01a59bdef185fc7739902b971de4ba4f.bindPopup(popup_b65881b768ed36f44641e53629583462)
+        ;
+
+        
+    
+    
+                marker_01a59bdef185fc7739902b971de4ba4f.setIcon(icon_fda11fa2ad55219595c86c3d61631622);
+            
+    
+            var marker_e09ded2c7bc52913bab577b682f18e65 = L.marker(
+                [51.1794285, -115.5717238],
+                {
+}
+            ).addTo(map_68d14a5b27f8c36d3741b5f4e0dc0dc1);
+        
+    
+            var icon_8655b4591be6b2aec0546bccaaa01eb3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "brown",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bd365b17988344c91142a0a678e5afea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_22eb25c50b6c0e682e90a7b3d51e45ae = $(`<div id="html_22eb25c50b6c0e682e90a7b3d51e45ae" style="width: 100.0%; height: 100.0%;">Starbucks</div>`)[0];
+                popup_bd365b17988344c91142a0a678e5afea.setContent(html_22eb25c50b6c0e682e90a7b3d51e45ae);
+            
+        
+
+        marker_e09ded2c7bc52913bab577b682f18e65.bindPopup(popup_bd365b17988344c91142a0a678e5afea)
+        ;
+
+        
+    
+    
+                marker_e09ded2c7bc52913bab577b682f18e65.setIcon(icon_8655b4591be6b2aec0546bccaaa01eb3);
+            
+    
+            var marker_ada6019429714ad8b1f726adb7aa332a = L.marker(
+                [51.1767175, -115.571158],
+                {
+}
+            ).addTo(map_68d14a5b27f8c36d3741b5f4e0dc0dc1);
+        
+    
+            var icon_9610997860ee142e5a95177363ac643c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "brown",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d86ee4ae9b36270cafad5f2d55d01e9a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc524ce28e9e88a212bf263abb3e1f3a = $(`<div id="html_cc524ce28e9e88a212bf263abb3e1f3a" style="width: 100.0%; height: 100.0%;">Starbucks</div>`)[0];
+                popup_d86ee4ae9b36270cafad5f2d55d01e9a.setContent(html_cc524ce28e9e88a212bf263abb3e1f3a);
+            
+        
+
+        marker_ada6019429714ad8b1f726adb7aa332a.bindPopup(popup_d86ee4ae9b36270cafad5f2d55d01e9a)
+        ;
+
+        
+    
+    
+                marker_ada6019429714ad8b1f726adb7aa332a.setIcon(icon_9610997860ee142e5a95177363ac643c);
+            
+    
+            var marker_1bad099ef9c8a2ef6ffb1d6650fbdb7a = L.marker(
+                [51.1811674, -115.5690305],
+                {
+}
+            ).addTo(map_68d14a5b27f8c36d3741b5f4e0dc0dc1);
+        
+    
+            var icon_e9cb309382b3baee49fe09d6bcdb0387 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "brown",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5d13da16f7d737c5978cdb08b8437bd0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a23ab2a9faef9d4c8538d3cafe25a219 = $(`<div id="html_a23ab2a9faef9d4c8538d3cafe25a219" style="width: 100.0%; height: 100.0%;">Whitebark Cafe</div>`)[0];
+                popup_5d13da16f7d737c5978cdb08b8437bd0.setContent(html_a23ab2a9faef9d4c8538d3cafe25a219);
+            
+        
+
+        marker_1bad099ef9c8a2ef6ffb1d6650fbdb7a.bindPopup(popup_5d13da16f7d737c5978cdb08b8437bd0)
+        ;
+
+        
+    
+    
+                marker_1bad099ef9c8a2ef6ffb1d6650fbdb7a.setIcon(icon_e9cb309382b3baee49fe09d6bcdb0387);
+            
+    
+            var marker_b2012d937bfea1c346f9977207caf3d9 = L.marker(
+                [51.1783094, -115.572478],
+                {
+}
+            ).addTo(map_68d14a5b27f8c36d3741b5f4e0dc0dc1);
+        
+    
+            var icon_47b47ca9f331d18fd1eee2fa1cbfc425 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "brown",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_56e490d6b206834ab6c1f364be672454 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9885ba4ffa7bb63518400acd887352cc = $(`<div id="html_9885ba4ffa7bb63518400acd887352cc" style="width: 100.0%; height: 100.0%;">JK Bakery Cafe</div>`)[0];
+                popup_56e490d6b206834ab6c1f364be672454.setContent(html_9885ba4ffa7bb63518400acd887352cc);
+            
+        
+
+        marker_b2012d937bfea1c346f9977207caf3d9.bindPopup(popup_56e490d6b206834ab6c1f364be672454)
+        ;
+
+        
+    
+    
+                marker_b2012d937bfea1c346f9977207caf3d9.setIcon(icon_47b47ca9f331d18fd1eee2fa1cbfc425);
+            
+    
+            var marker_a3a453ee672752adc4d56075d8be623e = L.marker(
+                [51.1796007, -115.5704762],
+                {
+}
+            ).addTo(map_68d14a5b27f8c36d3741b5f4e0dc0dc1);
+        
+    
+            var icon_807916ec302b463c9af7d55b450b17e4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "brown",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f409a858c2606ce113af23c167b0f847 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_017768654ede1e90a55d871e94f23ddd = $(`<div id="html_017768654ede1e90a55d871e94f23ddd" style="width: 100.0%; height: 100.0%;">Good Earth Coffeehouse Banff</div>`)[0];
+                popup_f409a858c2606ce113af23c167b0f847.setContent(html_017768654ede1e90a55d871e94f23ddd);
+            
+        
+
+        marker_a3a453ee672752adc4d56075d8be623e.bindPopup(popup_f409a858c2606ce113af23c167b0f847)
+        ;
+
+        
+    
+    
+                marker_a3a453ee672752adc4d56075d8be623e.setIcon(icon_807916ec302b463c9af7d55b450b17e4);
+            
+    
+            var marker_f53ef7b9007714f75ee4217598ef973d = L.marker(
+                [51.1720913, -115.5623591],
+                {
+}
+            ).addTo(map_68d14a5b27f8c36d3741b5f4e0dc0dc1);
+        
+    
+            var icon_0aedde65762e7a4c3124ad74978ba512 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "brown",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9240c8f5d067ba5ec2ffdbb037a731e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c6e7c78a95fb8afc963c47dd3480c95e = $(`<div id="html_c6e7c78a95fb8afc963c47dd3480c95e" style="width: 100.0%; height: 100.0%;">Maclab Bistro</div>`)[0];
+                popup_9240c8f5d067ba5ec2ffdbb037a731e0.setContent(html_c6e7c78a95fb8afc963c47dd3480c95e);
+            
+        
+
+        marker_f53ef7b9007714f75ee4217598ef973d.bindPopup(popup_9240c8f5d067ba5ec2ffdbb037a731e0)
+        ;
+
+        
+    
+    
+                marker_f53ef7b9007714f75ee4217598ef973d.setIcon(icon_0aedde65762e7a4c3124ad74978ba512);
+            
+    
+            var marker_c43a64cd5465c1d77bba014ef90d676a = L.marker(
+                [51.1754584, -115.571249],
+                {
+}
+            ).addTo(map_68d14a5b27f8c36d3741b5f4e0dc0dc1);
+        
+    
+            var icon_392b62ad323aff7c8bf7f121c1a461a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "brown",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7dffa5e374ce8ba25dccee57f410f4d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_133f8fdcca7876779d37993479ecaa44 = $(`<div id="html_133f8fdcca7876779d37993479ecaa44" style="width: 100.0%; height: 100.0%;">Little Wild Coffee</div>`)[0];
+                popup_7dffa5e374ce8ba25dccee57f410f4d6.setContent(html_133f8fdcca7876779d37993479ecaa44);
+            
+        
+
+        marker_c43a64cd5465c1d77bba014ef90d676a.bindPopup(popup_7dffa5e374ce8ba25dccee57f410f4d6)
+        ;
+
+        
+    
+    
+                marker_c43a64cd5465c1d77bba014ef90d676a.setIcon(icon_392b62ad323aff7c8bf7f121c1a461a1);
+            
+    
+            var marker_569cbbceaac51ea915c863b14f1e32e4 = L.marker(
+                [51.1755111, -115.570738],
+                {
+}
+            ).addTo(map_68d14a5b27f8c36d3741b5f4e0dc0dc1);
+        
+    
+            var icon_1e061cbfcdaf52aa291e11c5e8e36c7e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "brown",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_820dd1abab5ccc554c7149468eafa3fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b9c39612e32664faa4fbb37ebb21f34d = $(`<div id="html_b9c39612e32664faa4fbb37ebb21f34d" style="width: 100.0%; height: 100.0%;">BeaverTails Pastry Coffee</div>`)[0];
+                popup_820dd1abab5ccc554c7149468eafa3fe.setContent(html_b9c39612e32664faa4fbb37ebb21f34d);
+            
+        
+
+        marker_569cbbceaac51ea915c863b14f1e32e4.bindPopup(popup_820dd1abab5ccc554c7149468eafa3fe)
+        ;
+
+        
+    
+    
+                marker_569cbbceaac51ea915c863b14f1e32e4.setIcon(icon_1e061cbfcdaf52aa291e11c5e8e36c7e);
+            
+    
+            var marker_78903515a058237b92d526a4409e934a = L.marker(
+                [51.1773118, -115.571214],
+                {
+}
+            ).addTo(map_68d14a5b27f8c36d3741b5f4e0dc0dc1);
+        
+    
+            var icon_e640ef1b187fdca9588edfe6ca3f8415 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "brown",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5a43a187f588fed33ec596b5c1a9eb01 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d2d0c14f24926627f4240935808f82f0 = $(`<div id="html_d2d0c14f24926627f4240935808f82f0" style="width: 100.0%; height: 100.0%;">Milk Tea at Banff</div>`)[0];
+                popup_5a43a187f588fed33ec596b5c1a9eb01.setContent(html_d2d0c14f24926627f4240935808f82f0);
+            
+        
+
+        marker_78903515a058237b92d526a4409e934a.bindPopup(popup_5a43a187f588fed33ec596b5c1a9eb01)
+        ;
+
+        
+    
+    
+                marker_78903515a058237b92d526a4409e934a.setIcon(icon_e640ef1b187fdca9588edfe6ca3f8415);
+            
+    
+            var marker_41f4eaf81f4010c52221b8f3877c1016 = L.marker(
+                [51.17674, -115.5706511],
+                {
+}
+            ).addTo(map_68d14a5b27f8c36d3741b5f4e0dc0dc1);
+        
+    
+            var icon_aab88d87d14aeb75e48a2374e5ec3ac5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "brown",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_844710a623b28db9246a04f1a427c68f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1387d4bd4de31347a5e6373d8eb9bfaa = $(`<div id="html_1387d4bd4de31347a5e6373d8eb9bfaa" style="width: 100.0%; height: 100.0%;">The Uprising Craft Bakery</div>`)[0];
+                popup_844710a623b28db9246a04f1a427c68f.setContent(html_1387d4bd4de31347a5e6373d8eb9bfaa);
+            
+        
+
+        marker_41f4eaf81f4010c52221b8f3877c1016.bindPopup(popup_844710a623b28db9246a04f1a427c68f)
+        ;
+
+        
+    
+    
+                marker_41f4eaf81f4010c52221b8f3877c1016.setIcon(icon_aab88d87d14aeb75e48a2374e5ec3ac5);
+            
+    
+            var marker_ffc312c649777279c19a30f9e46bd61a = L.marker(
+                [51.1778742, -115.5721865],
+                {
+}
+            ).addTo(map_68d14a5b27f8c36d3741b5f4e0dc0dc1);
+        
+    
+            var icon_d0538b5577c97e17977d1f1f754710f4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "brown",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1795620b622f9889d4c91a7aa2486a38 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a857f60c546996ba4a6d5b3ccd4f5647 = $(`<div id="html_a857f60c546996ba4a6d5b3ccd4f5647" style="width: 100.0%; height: 100.0%;">Banff National Perk Coffee House & Eatery</div>`)[0];
+                popup_1795620b622f9889d4c91a7aa2486a38.setContent(html_a857f60c546996ba4a6d5b3ccd4f5647);
+            
+        
+
+        marker_ffc312c649777279c19a30f9e46bd61a.bindPopup(popup_1795620b622f9889d4c91a7aa2486a38)
+        ;
+
+        
+    
+    
+                marker_ffc312c649777279c19a30f9e46bd61a.setIcon(icon_d0538b5577c97e17977d1f1f754710f4);
+            
+    
+            var marker_2db535be6dd036d6749f1edd6c494a06 = L.marker(
+                [51.1851689, -115.5578853],
+                {
+}
+            ).addTo(map_68d14a5b27f8c36d3741b5f4e0dc0dc1);
+        
+    
+            var icon_3cc3e2b5d8325dce6128d9b1c1252002 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "brown",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c01f5bc44d8b853395061fe6ca1a0278 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e0a55a4cac114b0d7a5f89dc9c8c4fda = $(`<div id="html_e0a55a4cac114b0d7a5f89dc9c8c4fda" style="width: 100.0%; height: 100.0%;">The Happy Camper Cafe & Bar</div>`)[0];
+                popup_c01f5bc44d8b853395061fe6ca1a0278.setContent(html_e0a55a4cac114b0d7a5f89dc9c8c4fda);
+            
+        
+
+        marker_2db535be6dd036d6749f1edd6c494a06.bindPopup(popup_c01f5bc44d8b853395061fe6ca1a0278)
+        ;
+
+        
+    
+    
+                marker_2db535be6dd036d6749f1edd6c494a06.setIcon(icon_3cc3e2b5d8325dce6128d9b1c1252002);
+            
+    
+            var marker_882160a16672de7c2cd91cd2022ae169 = L.marker(
+                [51.1892796, -115.5626211],
+                {
+}
+            ).addTo(map_68d14a5b27f8c36d3741b5f4e0dc0dc1);
+        
+    
+            var icon_b6412fcd1a2a1f13e27fc022f17890c2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "brown",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_84a6a50a985b0445e6fc310c861b6d28 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7115d5520a46ea53d8d4cedbe0a86437 = $(`<div id="html_7115d5520a46ea53d8d4cedbe0a86437" style="width: 100.0%; height: 100.0%;">Pattis Pantry</div>`)[0];
+                popup_84a6a50a985b0445e6fc310c861b6d28.setContent(html_7115d5520a46ea53d8d4cedbe0a86437);
+            
+        
+
+        marker_882160a16672de7c2cd91cd2022ae169.bindPopup(popup_84a6a50a985b0445e6fc310c861b6d28)
+        ;
+
+        
+    
+    
+                marker_882160a16672de7c2cd91cd2022ae169.setIcon(icon_b6412fcd1a2a1f13e27fc022f17890c2);
+            
+</script>
+</html>

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1be7c6625258f0c3b1b4ad417f911747 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1be7c6625258f0c3b1b4ad417f911747" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1be7c6625258f0c3b1b4ad417f911747 = L.map(
+                "map_1be7c6625258f0c3b1b4ad417f911747",
+                {
+                    center: [48.8566, 2.3522],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7907ec487d589ffb64dd153e0e2fe123 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_7907ec487d589ffb64dd153e0e2fe123.addTo(map_1be7c6625258f0c3b1b4ad417f911747);
+        
+    
+            var marker_d0fc82069da8ade1542e666164b59550 = L.marker(
+                [48.8655, 2.3278],
+                {
+}
+            ).addTo(map_1be7c6625258f0c3b1b4ad417f911747);
+        
+    
+            var icon_5ca5ecb7599acd9cfada254253530536 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b62391b1e75cab103ee47f38928cc844 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d0a5fb537badeb45b6fa035ff6f0374a = $(`<div id="html_d0a5fb537badeb45b6fa035ff6f0374a" style="width: 100.0%; height: 100.0%;"><b>🍽️ RESTAURANT: Le Meurice</b><br>Food: French<br>📍 48.8655, 2.3278</div>`)[0];
+                popup_b62391b1e75cab103ee47f38928cc844.setContent(html_d0a5fb537badeb45b6fa035ff6f0374a);
+            
+        
+
+        marker_d0fc82069da8ade1542e666164b59550.bindPopup(popup_b62391b1e75cab103ee47f38928cc844)
+        ;
+
+        
+    
+    
+            marker_d0fc82069da8ade1542e666164b59550.bindTooltip(
+                `<div>
+                     Le Meurice
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d0fc82069da8ade1542e666164b59550.setIcon(icon_5ca5ecb7599acd9cfada254253530536);
+            
+    
+            var marker_bc3004c43c069d02d730abef596e04e3 = L.marker(
+                [48.854, 2.3325],
+                {
+}
+            ).addTo(map_1be7c6625258f0c3b1b4ad417f911747);
+        
+    
+            var icon_b8f6310e9b4f267bddd7c53b95229857 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7f5638170bc55a684604a1cce16d5e4e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a45440f44c1ecfa6ae108677a143e0ea = $(`<div id="html_a45440f44c1ecfa6ae108677a143e0ea" style="width: 100.0%; height: 100.0%;"><b>🍽️ RESTAURANT: Cafe de Flore</b><br>Food: French<br>📍 48.854, 2.3325</div>`)[0];
+                popup_7f5638170bc55a684604a1cce16d5e4e.setContent(html_a45440f44c1ecfa6ae108677a143e0ea);
+            
+        
+
+        marker_bc3004c43c069d02d730abef596e04e3.bindPopup(popup_7f5638170bc55a684604a1cce16d5e4e)
+        ;
+
+        
+    
+    
+            marker_bc3004c43c069d02d730abef596e04e3.bindTooltip(
+                `<div>
+                     Cafe de Flore
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bc3004c43c069d02d730abef596e04e3.setIcon(icon_b8f6310e9b4f267bddd7c53b95229857);
+            
+    
+            var marker_7e9889c4f495592239e73e887f98d15e = L.marker(
+                [48.857, 2.345],
+                {
+}
+            ).addTo(map_1be7c6625258f0c3b1b4ad417f911747);
+        
+    
+            var icon_8d5df26ef329ee176617c090674af32d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d7789214219b0eac0de9a7f275c1b01f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0e2d199804da0f3686b79482cd978624 = $(`<div id="html_0e2d199804da0f3686b79482cd978624" style="width: 100.0%; height: 100.0%;"><b>🍽️ RESTAURANT: Pizza Roma</b><br>Food: Italian<br>📍 48.857, 2.345</div>`)[0];
+                popup_d7789214219b0eac0de9a7f275c1b01f.setContent(html_0e2d199804da0f3686b79482cd978624);
+            
+        
+
+        marker_7e9889c4f495592239e73e887f98d15e.bindPopup(popup_d7789214219b0eac0de9a7f275c1b01f)
+        ;
+
+        
+    
+    
+            marker_7e9889c4f495592239e73e887f98d15e.bindTooltip(
+                `<div>
+                     Pizza Roma
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7e9889c4f495592239e73e887f98d15e.setIcon(icon_8d5df26ef329ee176617c090674af32d);
+            
+    
+            var marker_c0b591b5f4010c3a99fa14548fc2fdb8 = L.marker(
+                [48.8462, 2.3372],
+                {
+}
+            ).addTo(map_1be7c6625258f0c3b1b4ad417f911747);
+        
+    
+            var icon_693a96fb02f17a3f0aa1e3fa1ac9242d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4a04e2a929b06f926f45f3d90ec80056 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6ef4716fde2f981585e026d04eef50d7 = $(`<div id="html_6ef4716fde2f981585e026d04eef50d7" style="width: 100.0%; height: 100.0%;"><b>🌳 PARK: Jardin du Luxembourg</b><br>Playground: Yes<br>📍 48.8462, 2.3372</div>`)[0];
+                popup_4a04e2a929b06f926f45f3d90ec80056.setContent(html_6ef4716fde2f981585e026d04eef50d7);
+            
+        
+
+        marker_c0b591b5f4010c3a99fa14548fc2fdb8.bindPopup(popup_4a04e2a929b06f926f45f3d90ec80056)
+        ;
+
+        
+    
+    
+            marker_c0b591b5f4010c3a99fa14548fc2fdb8.bindTooltip(
+                `<div>
+                     Jardin du Luxembourg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c0b591b5f4010c3a99fa14548fc2fdb8.setIcon(icon_693a96fb02f17a3f0aa1e3fa1ac9242d);
+            
+    
+            var marker_1e27db16ceb50d8f28e940ff28fabb9b = L.marker(
+                [48.8639, 2.3272],
+                {
+}
+            ).addTo(map_1be7c6625258f0c3b1b4ad417f911747);
+        
+    
+            var icon_126b73712796f85cc75db2a6439f1020 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8438b280f7b764ebf41bc8383c854bb7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a9bc5f5add7d3b845c031fe1f5be6f0b = $(`<div id="html_a9bc5f5add7d3b845c031fe1f5be6f0b" style="width: 100.0%; height: 100.0%;"><b>🌳 PARK: Tuileries Garden</b><br>Playground: Yes<br>📍 48.8639, 2.3272</div>`)[0];
+                popup_8438b280f7b764ebf41bc8383c854bb7.setContent(html_a9bc5f5add7d3b845c031fe1f5be6f0b);
+            
+        
+
+        marker_1e27db16ceb50d8f28e940ff28fabb9b.bindPopup(popup_8438b280f7b764ebf41bc8383c854bb7)
+        ;
+
+        
+    
+    
+            marker_1e27db16ceb50d8f28e940ff28fabb9b.bindTooltip(
+                `<div>
+                     Tuileries Garden
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1e27db16ceb50d8f28e940ff28fabb9b.setIcon(icon_126b73712796f85cc75db2a6439f1020);
+            
+    
+            var marker_2dd89d07de452b3a809756a703f71f41 = L.marker(
+                [48.8795, 2.3087],
+                {
+}
+            ).addTo(map_1be7c6625258f0c3b1b4ad417f911747);
+        
+    
+            var icon_c92fa3cb683d69ec43df65b6f7f36b83 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_47ebe67bfa901c273d87e4f556d8875d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_08c85eeb1327899e7789d7e00e06905d = $(`<div id="html_08c85eeb1327899e7789d7e00e06905d" style="width: 100.0%; height: 100.0%;"><b>🌳 PARK: Parc Monceau</b><br>Playground: Yes<br>📍 48.8795, 2.3087</div>`)[0];
+                popup_47ebe67bfa901c273d87e4f556d8875d.setContent(html_08c85eeb1327899e7789d7e00e06905d);
+            
+        
+
+        marker_2dd89d07de452b3a809756a703f71f41.bindPopup(popup_47ebe67bfa901c273d87e4f556d8875d)
+        ;
+
+        
+    
+    
+            marker_2dd89d07de452b3a809756a703f71f41.bindTooltip(
+                `<div>
+                     Parc Monceau
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2dd89d07de452b3a809756a703f71f41.setIcon(icon_c92fa3cb683d69ec43df65b6f7f36b83);
+            
+    
+            var marker_5846b754b8dce63f695b206a742fd84e = L.marker(
+                [48.8606, 2.3376],
+                {
+}
+            ).addTo(map_1be7c6625258f0c3b1b4ad417f911747);
+        
+    
+            var icon_5a7a28f37373466ec8e4d9622ea8799c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "bank",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_29145fc7c4fee3f02a3693060f3b0e89 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_921bb0c775bea80bc228d46114e0dad6 = $(`<div id="html_921bb0c775bea80bc228d46114e0dad6" style="width: 100.0%; height: 100.0%;"><b>🏛️ MUSEUM: Louvre Museum</b><br>Entry: €17<br>📍 48.8606, 2.3376</div>`)[0];
+                popup_29145fc7c4fee3f02a3693060f3b0e89.setContent(html_921bb0c775bea80bc228d46114e0dad6);
+            
+        
+
+        marker_5846b754b8dce63f695b206a742fd84e.bindPopup(popup_29145fc7c4fee3f02a3693060f3b0e89)
+        ;
+
+        
+    
+    
+            marker_5846b754b8dce63f695b206a742fd84e.bindTooltip(
+                `<div>
+                     Louvre Museum
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5846b754b8dce63f695b206a742fd84e.setIcon(icon_5a7a28f37373466ec8e4d9622ea8799c);
+            
+    
+            var marker_23ac6a6055997d198bf9f1c1994941fb = L.marker(
+                [48.86, 2.3265],
+                {
+}
+            ).addTo(map_1be7c6625258f0c3b1b4ad417f911747);
+        
+    
+            var icon_0247c9eb2309c6048ddd8054d8994ba4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "bank",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c06fce4a9b9e1ee5cb489fd23a22a102 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ba823610470da11dfa584de0818b7e88 = $(`<div id="html_ba823610470da11dfa584de0818b7e88" style="width: 100.0%; height: 100.0%;"><b>🏛️ MUSEUM: Musée d'Orsay</b><br>Entry: €14<br>📍 48.86, 2.3265</div>`)[0];
+                popup_c06fce4a9b9e1ee5cb489fd23a22a102.setContent(html_ba823610470da11dfa584de0818b7e88);
+            
+        
+
+        marker_23ac6a6055997d198bf9f1c1994941fb.bindPopup(popup_c06fce4a9b9e1ee5cb489fd23a22a102)
+        ;
+
+        
+    
+    
+            marker_23ac6a6055997d198bf9f1c1994941fb.bindTooltip(
+                `<div>
+                     Musée d'Orsay
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_23ac6a6055997d198bf9f1c1994941fb.setIcon(icon_0247c9eb2309c6048ddd8054d8994ba4);
+            
+</script>
+</html>
