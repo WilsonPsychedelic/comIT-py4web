@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-=======
-
-# ANSI colors escape codes 
-
->>>>>>> 787920c879c2e5ba256e2dddafa4219b036c89e8
 regular_colors = {
     'Black': '\033[0;30m',
     'Red': '\033[0;31m',
@@ -83,8 +77,4 @@ high_intensity_backgrounds = {
 
 reset = {
     'Reset': '\033[0m'
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 787920c879c2e5ba256e2dddafa4219b036c89e8

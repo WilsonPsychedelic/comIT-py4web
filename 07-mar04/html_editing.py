@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 # Last time modified: 03/13/26
 # Author: Wilson Psychedelic
-=======
-# Last time modified: 03/04/26
-# Author: y44k0v
->>>>>>> 787920c879c2e5ba256e2dddafa4219b036c89e8
 
 html_base = ""
 
@@ -14,7 +9,6 @@ with open("garbage.html", "r") as website:
 
 page_title = "MY Python Website"
 
-<<<<<<< HEAD
 html_modified = html_base.replace("<title>Document", f"<title>{page_title}</title>")
 
 daisy_ui = """
@@ -24,20 +18,6 @@ daisy_ui = """
 
 <!-- Daisy UI themes -->
 <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
-=======
-html_modified = html_base.replace("<title>Document", f"<title>{page_title}") 
-
-# print(html_modified)
-
-daisy_ui ="""
-
-<!-- Daisy UI -->
-<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<!-- Daisy ui themes -->
-<link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
-
->>>>>>> 787920c879c2e5ba256e2dddafa4219b036c89e8
 """
 
 html_modified = html_modified.replace("</head>", daisy_ui +"\n</head>" )
@@ -47,7 +27,6 @@ html_modified = html_modified.replace('<html lang="en">', f'<html lang="en" data
 
 nav_bar = """
 <div class="navbar bg-base-100 shadow-sm">
-<<<<<<< HEAD
 <div class="flex-1">
   <a class="btn btn-ghost text-xl">My Python Site</a>
 </div>
@@ -101,14 +80,3 @@ html_modified = html_modified.replace('</body>', nav_bar + hero + card + footer 
 
 with open("index.html", "w") as file:
     file.write(html_modified)
-=======
-  <a class="btn btn-ghost text-xl">daisyUI</a>
-</div>
-"""
-
-
-html_modified = html_modified.replace('<body>', '<body>\n'+nav_bar)
-
-with open("index.html", "w") as file:
-    file.write(html_modified)
->>>>>>> 787920c879c2e5ba256e2dddafa4219b036c89e8
