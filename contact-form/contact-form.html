@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Contact Form</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.1/dist/full.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        :root { --accent-gold: #c9a84c; }
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: #0c0b09;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .display-heading { font-family: 'Playfair Display', serif; }
+
+        .contact-card {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            max-width: 900px;
+            background: #1a1814;
+            border: 1px solid #2c2a24;
+            border-radius: 1rem;
+            overflow: hidden;
+        }
+        .card-left { background: #14120e; padding: 3rem; color: white; }
+        .card-right { padding: 3rem; background: #1a1814; }
+
+        .label-text-custom { color: #a39e93; font-weight: 500; }
+        .error-msg { color: #e07676; font-size: 0.875rem; margin-top: 0.25rem; }
+
+        @media (max-width: 768px) {
+            .contact-card { grid-template-columns: 1fr; }
+            .card-left { display: none; }
+        }
+    </style>
+    </head>
+    <body>
+      
+        <div class="contact-card shadow-2xl">
+            <div class="card-left flex flex-col justify-between">
+                <div>
+                    <h2 class="display-heading text-4xl mb-6" style="color: var(--accent-gold)">Get in Touch</h2>
+                    <p class="text-gray-400 mb-8">Have a project in mind? We'd love to hear from you.</p>
+                </div>
+                <div class="space-y-4 text-sm">
+                    <p>📍 123 Design St, Creative City</p>
+                    <p>✉️ hello@example.com</p>
+                </div>
+            </div>
+            <div class="card-right">
+                <form id="contact form" class="space-y-4" novalidate>
+                    <div class="form-control">
+                        <label class="label"><span class="label-text-custom">Name</span></label>
+                        <input type="text" id="field-name" class="input input-bordered w-full bg-transparent border-gray-700 focus:border-[#c9a84c]" placeholder="Jane Smith" />
+                        <span class="error-msg hidden" id="err-name">Please enter your name.</span>  
+                    </div>
+
+                    <div class="form-control">
+                        <label class="label"><span class="label-text-custom">Subject</span></label>
+                        <select id="field-subject" class="select select-bordered w-full bg-transparent border-gray-700">
+                            <option value="">Choose a topic...</option>
+                            <option>General Inquiry</option>
+                            <option>Project Collaboration</option>
+                            <option>Support</option>
+                        </select>
+                        <span class="error-msg hidden" id="err-subject">Please select a topic.</span>
+                    </div>
+
+                    <div class="form control">
+                        <label class="label">
+                            <span class="label-text-custom">Message</span>
+                            <span class="label-text-alt text-gray-500"></span id="char-count">0</span>/500</span>
+                        </label>
+                        <textarea id="field-message" class="textarea textarea-bordered h-32 bg-transparent border-gray-700" placeholder="Tell us more..."></textarea>
+                        <span class="error-msg hidden" id="err-message">Message is required.</span>
+                    </div>
+
+                    <button type="submit" id="submit-btn" class="btn w-full mt-4 border-none hover:opacity-90" style="background: var(--accent-gold); color: #0c0b09;">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div id="toast" class="toast toast-top toast-end hidden">
+            <div class="alert alert-success">
+                <span>Message sent successfully!</span>
+            </div>
+        </div>
+        <script>
+            const form = document.getElementById('contact-form');
+            const msgField = document.getElementById('field-message');
+            const charCount = document.getElementById('char-count');
+            const btn = document.getElementById('submit-btn');
+
+            msgField.addEventListener('input', () => {
+                const len = msgField.value.length;
+                charCount.textContent = len;
+                charCount.style.color = len > 450 ? '#e07676' : '';
+            });
+
+            function validateField(fieldId, errId, validationFn) {
+                const field = document.getElementById(fieldId);
+                const error = document.getElementById(errId);
+                const isValid = validationFn(field);
+
+                if (!isValid) {
+                    error.classList.remove('hidden');
+                    field.classList.add('border-error');
+                } else {
+                    error.classList.add('hidden');
+                    field.classList.remove('border-error');
+                }
+                return isValid;
+            }
+
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                const isNameValid = validateField('field-name', 'err-name', f => f.value.trim().length > 0);
+                const isSubjectValid = validateField('field-subject', 'err-subject', f => f.value !== "");
+                const isMsgValid = validateField('field-message', 'err-message', f => f.value.trim().length > 0);
+
+                if (isNameValid && isSubjectValid && isMsgValid) {
+                    const originalText = btn.innerHTML;
+                    btn.disabled = true;
+                    btn.innerHTML = '<span class="loading loading-spinner loading-sm"></span> Sending...';
+                    
+                    setTimeout(() => {
+                        form.reset();
+                        charCount.textContent = "0";
+                        btn.disabled = false;
+                        btn.innerHTML = originalText;
+
+                        const toast=document.getElementById('toast');
+                        toast.classList.remove('hidden');
+                        setTimeout(() => toast.classList.add('hidden'), 4000);                
+                    }, 1500);
+                }
+            });
+        </script>
+    </body>
+</html>
