@@ -1,0 +1,12 @@
+guest_list = ['Bill Gates', 'Albert Einstein', 'Steve Jobs']
+print(f"Hi {guest_list}, I have just found a bigger table we could use for the dinner.")
+guest_list.insert(0, 'Ryan Reynolds')
+guest_list.insert(2, 'Adam Sandler')
+guest_list.append('Tom Cruise')
+message1=(f"Hello {guest_list[0]}, would you like to come out to my dinner on Friday night?")
+message2=(f"Hello {guest_list[1]}, would you like to come out to my dinner on Friday night?")
+message3=(f"Hello {guest_list[2]}, would you like to come out to my dinner on Friday night?")
+message4=(f"Hello {guest_list[3]}, would you like to come out to my dinner on Friday night?")
+message5=(f"Hello {guest_list[4]}, would you like to come out to my dinner on Friday night?")
+message6=(f"Hello {guest_list[5]}, would you like to come out to my dinner on Friday night?")
+print(f"{message1}\n{message2}\n{message3}\n{message4}\n{message5}\n{message6}")
